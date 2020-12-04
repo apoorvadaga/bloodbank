@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <title>HTML Table</title>
+   </head>
+   <body>
+      <form action="Hospital.php" method="POST">
+         <table border="2" align="center" width="400" bgcolor="#CCCCCC" >
+            <h3 style="text-align:center">Hospital's Registration form</h3>
+            <tr>
+               <th>Hospital Name</th>
+               <td><input type="text" name="HospitalName" maxlength="30" title="enter your full name" placeholder="enter your full name" required/></td>
+            </tr>
+            <tr>
+               <th>Email ID</th>
+               <td><input type="email" name="EmailID"/></td>
+            </tr>
+            <tr>
+               <th>Password</th>
+               <td><input type="password"name="Password"/></td>
+            </tr>
+            <tr>
+               <th>Mobile No.</th>
+               <td><input type="number" name="MobileNo"/></td>
+            </tr>
+            <tr>
+               <th>Address</th>
+               <td><textarea rows="8" cols="20" name="Address"></textarea></td>
+            </tr>
+            <tr>
+               <th>Available Blood Groups</th>
+               <td>
+                  AB+<input type="checkbox" name="BloodGroup" value="AB+"/>
+                  AB-<input type="checkbox" name="BloodGroup" value="AB-"/>
+                  B+<input type="checkbox" name="BloodGroup" value="B+"/>
+                  B-<input type="checkbox" name="BloodGroup" value="B-"/>
+                  A+<input type="checkbox" name="BloodGroup" value="A+"/>
+                  A-<input type="checkbox" name="BloodGroup" value="A-"/>
+                  O+<input type="checkbox" name="BloodGroup" value="O+"/>
+                  O-<input type="checkbox" name="BloodGroup" value="O-"/>
+               </td>
+            </tr>
+            <tr>
+               <th>State</th>
+               <td>
+                  <select name="State">
+                     <option value="" selected="selected" disabled="disabled">Select State</option>
+                     <option value="1">Assam</option>
+                     <option value="2">Rajasthan</option>
+                     <option value="3">Maharashtra</option>
+                     <option value="4">Gujarat</option>
+                     <option value="5">Andhra Pradesh</option>
+                     <option value="6">Madhya Pradesh</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center"><input type="submit" value="Submit Registration"/>
+               </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><a href="Hospitallogin.html">Go to Login</a>
+                </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>

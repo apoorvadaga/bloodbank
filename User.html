@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>HTML Table</title>
+   </head>
+   <body>
+      <form action="User.php" method="POST">
+         <table border="2" align="center" width="400" bgcolor="#CCCCCC" >
+            <h3 align="center">Reciever's Registration form</h3>
+            <tr>
+               <th>Name</th>
+               <td>
+                  <input type="text" name="Name" id="fn1" maxlength="30" title="enter your full name" placeholder="enter your full name" required/>
+               </td>
+            </tr>
+            <tr>
+               <th>Email ID</th>
+               <td>
+                  <input type="email" name="EmailID"/>
+               </td>
+            </tr>
+            <tr>
+               <th>Enter Password</th>
+               <td><input type="password" name="Password"/></td>
+            </tr>
+            <tr>
+               <th>Mobile No</th>
+               <td><input type="number" name="MobileNo"/></td>
+            </tr>
+            <tr>
+               <th>Address</th>
+               <td><textarea rows="8" cols="20" name="Address"></textarea></td>
+            </tr>
+            <tr>
+               <th>Age</th>
+               <td><input type="number" name="Age"/></td>
+            </tr>
+            <tr>
+               <th>Gender</th>
+               <td>
+                  Male<input type="radio" name="Gender" value="M"/>
+                  Female<input type="radio" name="Gender" value="F"/>
+               </td>
+            </tr>
+            <tr>
+               <th>DOB</th>
+               <td><input type="date" name="DOB"/></td>
+            </tr>
+            <tr>
+               <th>Blood Group</th>
+               <td>
+                  AB+<input type="radio" name="BloodGroup" value="AB+"/>
+                  AB-<input type="radio" name="BloodGroup" value="AB-"/>
+                  B+<input type="radio" name="BloodGroup" value="B+"/>
+                  B-<input type="radio" name="BloodGroup" value="B-"/>
+                  A+<input type="radio" name="BloodGroup" value="A+"/>
+                  A-<input type="radio" name="BloodGroup" value="A-"/>
+                  O+<input type="radio" name="BloodGroup" value="O+"/>
+                  O-<input type="radio" name="BloodGroup" value="O-"/>
+               </td>
+            </tr>
+            <tr>
+               <th>State</th>
+               <td>
+                  <select name="State">
+                     <option value="" selected="selected" disabled="disabled">Select State</option>
+                     <option value="Assam">Assam</option>
+                     <option value="Rajasthan">Rajasthan</option>
+                     <option value="Maharashtra">Maharashtra</option>
+                     <option value="Gujarat">Gujarat</option>
+                     <option value="Andhra Pradesh">Andhra Pradesh</option>
+                     <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center"><a href="Userlogin.html">"submit"</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center"><a href="Userlogin.html">Go to Login</a>
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
